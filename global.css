@@ -1,0 +1,111 @@
+body {
+  background-color: #ffffff;
+}
+
+h2 {
+  text-decoration: none;
+  color: #000000;
+  font-family: montserrat, sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: raleway, sans-serif;
+}
+
+#logo{
+  width: 63px;
+  height: 63px;
+}
+
+.navbar {
+  position: fixed;
+  height: 83px;
+  border-bottom: 1px solid #D6D6D6;
+  display: grid;
+  background-color: white;
+  width: 100%;
+  top: 0;
+  align-items: center;
+  
+  font-family: montserrat, sans-serif;
+
+  grid-template-columns: 8% 7% 50%  auto auto auto auto 8%;
+}
+
+.logotype{
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.link{
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.container{
+  margin-top: 130px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 8% repeat(12, 1fr) 8%;
+  grid-template-rows: repeat(24, 120px);
+  grid-template-areas: 
+    ". A A A A A A . i i i i i ."
+    ". a a a a a a . i i i i i ."
+    ". a a a a a a . i i i i i ."
+    ". . . . . . . . i i i i i ."
+    ". . . . . . . . . . . . . ."
+    ". . . . . B B B B . . . . ."
+    ". . . b b b b b b b b . . ."
+    ". c c c c c c c c c c c c . "
+    ". c c c c c c c c c c c c ."
+    ". . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . .";
+
+}
+.Introduction-A{
+  grid-area: A;
+  font-size: 48px;
+}
+.introduction-a{
+  grid-area: a;
+  font-size: 30px;
+}
+
+.illustration-i{
+  grid-area: i;
+}
+
+.Works-B{
+  grid-area: B;
+  text-align: center;
+  font-size: 40px;
+}
+
+.works-b{
+  grid-area: b;
+  text-align: center;
+  font-size: 24px;
+
+}
+
+.card{
+  display: flex;
+  justify-content: space-evenly;
+  grid-area: c;
+  background: #FFFFFF;
+  border-radius: 2px;
+  width: 30%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s;
+}
+
+.recentworks-1{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s;
+}
